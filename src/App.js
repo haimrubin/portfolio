@@ -10,10 +10,12 @@ import Proj from "./pages/Proj";
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <header>
+        <Header></Header>
+      </header>
       <main>
-      <Route path="/contact">
-          <Contact/>
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/home">
           <Home />

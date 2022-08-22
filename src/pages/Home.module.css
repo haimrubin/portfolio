@@ -9,6 +9,7 @@
   padding-bottom: 2rem;
 }
 
+
 .image-container {
     background-image: url("../photos/walcomeBackGround.jpg"); /* The image used - important! */
     background-size: cover;
