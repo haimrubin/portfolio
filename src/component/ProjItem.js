@@ -5,7 +5,7 @@ const ProjItem = (props) => {
   return (
     <li className={classes.item}>
       <div className={classes.text}>
-        <h1>{props.title}</h1>
+        <h1>{props.title} - {props.language}</h1>
         <h3>{props.txt}</h3>
       </div>
 

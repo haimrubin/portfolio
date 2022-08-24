@@ -2,6 +2,7 @@
   margin: 5rem auto;
   width: 60%;
   animation: proj-appear 1s ease-out forwards;
+  display: flow-root;
 }
 
 .projs ul {
