@@ -7,8 +7,6 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Proj from "./pages/Proj";
 
-// Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
-
 function App() {
   return (
     <div className="App">

@@ -85,10 +85,10 @@ const EmailForm = () => {
     <div className={classes.main_img}>
       <div className={classes.main}>
         <form id="email_form" className={classes.email} onSubmit={sendEmail}>
-          {/* <div className={classes.title}>
-            Want to send me a position offer? <br />
+          <div className={classes.title}>
+            Want to send me a job offer? <br />
             Or just some email
-          </div> */}
+          </div>
           <div className={classes[titleNameClasses]}>
             {titleHasError && (
               <p className={classes.error_text}>Please enter a title!!</p>
