@@ -1,10 +1,11 @@
-import { Route } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Footer from "./component/Footer";
 import Header from "./component/MainHeader/Header";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import Page404 from "./pages/Page404";
 import Proj from "./pages/Proj";
 
 function App() {
@@ -14,11 +15,9 @@ function App() {
         <Header></Header>
       </header>
       <main>
+        <Switch>
         <Route path="/contact">
           <Contact />
-        </Route>
-        <Route path="/home">
-          <Home />
         </Route>
         <Route path="/my-projects">
           <Proj />
@@ -26,7 +25,17 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-      </main>
+        <Route path="/" exact>
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home" >
+          <Home/>
+        </Route>
+        <Route path="*" >
+          <Page404/>
+        </Route>
+        </Switch>
+      </main> 
       <footer>
         <Footer />
       </footer>

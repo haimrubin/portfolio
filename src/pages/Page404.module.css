@@ -1,0 +1,23 @@
+
+.main ul{
+    list-style-type: none;
+}
+.main{
+    text-align: center;
+}
+
+.main span{
+    font-size: 20vw;
+    font-weight: bolder;
+    color: pink;
+}
+
+.main a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  .main a:hover{
+    color: #7076fe;
+  }

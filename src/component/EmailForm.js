@@ -2,6 +2,7 @@ import classes from "./EmailForm.module.css";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "emailjs-com";
 import useInput from "./hooks/use-input";
+import { Prompt } from "react-router-dom";
 
 const isNotEmpty = (value) => value.trim() !== "";
 const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
@@ -56,6 +57,11 @@ const EmailForm = () => {
     formIsValid = true;
   }
 
+  let isEntering = false;
+  if (msgIsValid || emailIsValid || nameIsValid || titleIsValid) {
+    isEntering = true;
+  }
+
   const sendEmail = (event) => {
     event.preventDefault();
     if (!formIsValid) {
@@ -85,8 +91,9 @@ const EmailForm = () => {
     <div className={classes.main_img}>
       <div className={classes.main}>
         <form id="email_form" className={classes.email} onSubmit={sendEmail}>
+          <Prompt message="Are you sure tou eant to leave? All your entered data will be lost!" when={isEntering} />
           <div className={classes.title}>
-            Want to send me a job offer? <br />
+            Want to send me a position offer? <br />
             Or just some email
           </div>
           <div className={classes[titleNameClasses]}>
@@ -140,7 +147,7 @@ const EmailForm = () => {
               onBlur={msgBlurHandler}
             ></textarea>
           </div>
-          <button disabled={!formIsValid} type="submit">
+          <button disabled={!formIsValid} type="submit" onClick={()=>isEntering = false}>
             Send <SendIcon />
           </button>
         </form>
