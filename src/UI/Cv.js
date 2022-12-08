@@ -17,7 +17,7 @@ const Cv = () => {
 
       <Link
         onClick={downloadHandler}
-        to="/files/Haim Rubin cv.pdf"
+        to="/files/Haim Rubin CV.pdf"
         target="_blank"
         download="HaimRubinCV.pdf"
       >

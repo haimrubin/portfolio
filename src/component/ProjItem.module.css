@@ -7,9 +7,17 @@
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 8px 8px #4b556b;
+  
 }
 
 .text {
   text-align: left;
   margin-left: 5%;
+}
+
+@media (max-width:600px){
+  .item {
+    display: flow-root;
+   
+  }
 }

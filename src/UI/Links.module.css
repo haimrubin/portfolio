@@ -1,7 +1,5 @@
 .links {
-   
-    padding: 2rem;
-
+  padding: 2rem;
 }
 
 .links a {
@@ -11,8 +9,6 @@
 }
 
 .links a:hover,
-.links a:active{
+.links a:active {
   color: #f07272;
-  
 }
-

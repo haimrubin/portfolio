@@ -4,15 +4,21 @@
   justify-items: center;
   bottom:0;
   left:0;
-  width: 100%;
+  width: 100vw;
+  
+}
 
+.list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   
 }
 
 .footer a {
   
-  margin-left: 4rem;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 

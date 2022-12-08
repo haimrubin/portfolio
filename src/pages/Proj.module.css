@@ -1,6 +1,6 @@
 .projs {
   margin: 5rem auto;
-  width: 60%;
+  width: 70%;
   animation: proj-appear 1s ease-out forwards;
   display: flow-root;
 }

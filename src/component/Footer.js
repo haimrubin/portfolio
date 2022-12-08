@@ -5,13 +5,19 @@ import classes from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={classes.footer}>
-      <a href="https://github.com/haimrubin">
-        <GitHubIcon />
-      </a>
+      <ul className={classes.list}>
+        <li>
+          <a href="https://github.com/haimrubin">
+            <GitHubIcon />
+          </a>
+        </li>
 
-      <a href="https://www.linkedin.com/in/haim-rubin/">
-        <LinkedInIcon color="primary" />
-      </a>
+        <li>
+          <a href="https://www.linkedin.com/in/haim-rubin/">
+            <LinkedInIcon color="primary" />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

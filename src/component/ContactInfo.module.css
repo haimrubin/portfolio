@@ -1,13 +1,27 @@
 .contact {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-    margin-left: 25%;
-    font-size: 20px;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  justify-content: space-around;
 }
 
-.contact li{
-    margin: 0;
+.contact li {
+  margin: 0;
   margin-left: 4rem;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    justify-content: space-between;
+  }
+  .contact li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    
+  }
+  .contact {
+    display: block;
+    
+  }
 }

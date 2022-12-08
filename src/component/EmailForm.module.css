@@ -1,6 +1,7 @@
 .main {
   display: flex;
   justify-content: space-around;
+
 }
 
 .main_img {
@@ -13,6 +14,8 @@
 }
 
 .title {
+  width: 80%;
+  margin-left: 10%;
   margin-top: 2rem;
   font-size: 35px;
   font-weight: bold;
@@ -22,7 +25,7 @@
   margin: 0.3rem auto;
   border-radius: 10px;
   font-size: 30px;
-  width: 500px;
+  width: 70vw;
   height: 50px;
   font-style: italic;
   border: none;
@@ -34,7 +37,7 @@
   font-size: 30px;
   margin: 0.3rem;
   border-radius: 10px;
-  width: 500px;
+  width: 70vw;
   height: 250px;
   border: none;
   background-color: #f9f9f9;
@@ -76,6 +79,7 @@
 .invalid input {
   border: 1px solid #b40e0e;
   background-color: #fddddd;
+
 }
 
 .error_text {
@@ -87,3 +91,5 @@
   color: rgb(83, 5, 13);
   
 }
+
+

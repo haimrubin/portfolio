@@ -5,11 +5,14 @@ const ProjItem = (props) => {
   return (
     <li className={classes.item}>
       <div className={classes.text}>
-        <h1>{props.title} - {props.language}</h1>
+        <h1>
+          {props.title} - {props.language}
+        </h1>
         <h3>{props.txt}</h3>
       </div>
-
-      <Links link={props.link} git={props.git}></Links>
+      <div>
+        <Links link={props.link} git={props.git}></Links>
+      </div>
     </li>
   );
 };

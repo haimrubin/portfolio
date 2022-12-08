@@ -24,3 +24,16 @@
   color: #7076fe;
   border-bottom: 1px solid #7076fe;
 }
+
+@media (max-width:600px){
+  .nav ul {
+    display: list-item;
+    align-items: none;
+    list-style: none;
+  }
+  .nav li {
+    margin: 0;
+    margin-left: 0;
+    font-size: x-large;
+  }
+}

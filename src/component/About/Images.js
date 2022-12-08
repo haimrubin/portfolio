@@ -9,7 +9,7 @@ import classes from "./Images.module.css";
 
 const images = [img3, img22, img4, img1, img5];
 const imgList = images.map((item) => (
-  <img src={item} height={500} width={"19%"} alt="images" key={item}></img>
+  <img src={item}  alt="images" key={item} className={classes.img}></img>
 ));
 
 const Images = () => {
