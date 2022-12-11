@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  
   top:0;
   left:0;
   background-color: #1f1f1f;
@@ -8,9 +8,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  height: 60px;
   font: inherit;
-  box-shadow: 0 2px 8px black;
+  /* box-shadow: 0 2px 8px black; */
   overflow-x: hidden;
+  border-bottom: 1px solid black;
+  
   
 }
 
@@ -29,5 +32,13 @@
 
 .name a {
   text-decoration: dashed;
+}
+
+
+@media (max-width: 600px){
+  .name{
+    font-size: 25px;
+    
+  }
 }
 

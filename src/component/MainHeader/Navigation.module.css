@@ -1,16 +1,19 @@
-
+.name a {
+  text-decoration: dashed;
+}
 .nav {
-    padding: 0 5%;
+  padding: 0 5%;
+}
+
+.nav li {
+  margin: 0;
+  margin-left: 2rem;
 }
 
 .nav ul {
   display: flex;
   align-items: center;
   list-style: none;
-}
-.nav li {
-  margin: 0;
-  margin-left: 2rem;
 }
 
 .nav a {
@@ -25,15 +28,49 @@
   border-bottom: 1px solid #7076fe;
 }
 
-@media (max-width:600px){
-  .nav ul {
-    display: list-item;
-    align-items: none;
-    list-style: none;
+.nav .mobileNav {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav .mobileNav {
+    display: flex;
+    align-items: center;
   }
-  .nav li {
-    margin: 0;
-    margin-left: 0;
-    font-size: x-large;
+  .nav .mobileNav .hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 59px;
+    right: 0;
+    width: 100%;
+    background-color: #181818;
+    border-top: #7076fe;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    border-top: 2px solid #7076fe;
+  }
+  .nav a:hover,
+  .nav a:active,
+  .nav a.active {
+    color: #7076fe;
+    border-bottom: none;
+  }
+
+  .nav .deskBar {
+    display: none;
   }
 }

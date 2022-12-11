@@ -12,7 +12,7 @@ const Header = () => {
         </NavLink>
         Haim Rubin
       </div>
-      <Navigation></Navigation>
+      <Navigation />
     </header>
   );
 };

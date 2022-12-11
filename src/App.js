@@ -2,6 +2,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Footer from "./component/Footer";
 import Header from "./component/MainHeader/Header";
+import Navigation from "./component/MainHeader/Navigation";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -12,30 +13,30 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Header></Header>
+        <Header />
       </header>
       <main>
         <Switch>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/my-projects">
-          <Proj />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/" exact>
-          <Redirect to="/home" />
-        </Route>
-        <Route path="/home" >
-          <Home/>
-        </Route>
-        <Route path="*" >
-          <Page404/>
-        </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/my-projects">
+            <Proj />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/" exact>
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="*">
+            <Page404 />
+          </Route>
         </Switch>
-      </main> 
+      </main>
       <footer>
         <Footer />
       </footer>
