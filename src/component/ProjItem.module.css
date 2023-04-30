@@ -1,4 +1,4 @@
-.item {
+/* .item {
   display: flex;
   margin-bottom: 3rem;
 
@@ -7,6 +7,7 @@
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 8px 8px #4b556b;
+  width: 20rem;
   
 }
 
@@ -20,4 +21,39 @@
     display: flow-root;
    
   }
+} */
+
+/* .item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+} */
+.item{
+  height: 50%;
 }
+.imgdiv {
+  position: relative;
+}
+
+.imgdiv img {
+  display: block;
+  width: 100%;
+  height: 70vh;
+  border: black 3px solid;
+}
+
+.imgdiv h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.imgdiv h3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+

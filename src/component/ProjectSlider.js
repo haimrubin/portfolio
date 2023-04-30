@@ -1,9 +1,4 @@
-import img1 from "../../photos/img1.jpeg";
-import img22 from "../../photos/img22.jpeg";
-import img3 from "../../photos/img3.jpeg";
-import img4 from "../../photos/img4.jpeg";
-import img5 from "../../photos/img5.jpeg";
-import "../ProjectSlider.css";
+import "./ProjectSlider.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,14 +9,10 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination } from "swiper";
 
-const images = [img3, img22, img4, img1, img5];
-const imgList = images.map((item) => (
-  <SwiperSlide>
-    <img src={item} key={item}></img>
-  </SwiperSlide>
-));
-
-const Images = () => {
+const ProjectSlider = (props) => {
+  const slides = props.projects.map((item) => (
+    <SwiperSlide>{item}</SwiperSlide>
+  ));
   const screenWidth = window.innerWidth;
   let slidesPerView = 3;
   if (screenWidth < 640) {
@@ -29,8 +20,6 @@ const Images = () => {
   }
   return (
     <>
-      <h2>I believe a picture is worth more than words...</h2>
-
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -46,10 +35,10 @@ const Images = () => {
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
       >
-        {imgList}
+        {slides}
       </Swiper>
     </>
   );
 };
 
-export default Images;
+export default ProjectSlider;

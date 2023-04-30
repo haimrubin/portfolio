@@ -91,7 +91,7 @@ const EmailForm = () => {
     <div className={classes.main_img}>
       <div className={classes.main}>
         <form id="email_form" className={classes.email} onSubmit={sendEmail}>
-          <Prompt message="Are you sure tou eant to leave? All your entered data will be lost!" when={isEntering} />
+          <Prompt message="Are you sure you want to leave? All your entered data will be lost!" when={isEntering} />
           <div className={classes.title}>
             Want to send me a position offer? <br />
             Or just some email

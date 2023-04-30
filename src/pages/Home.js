@@ -12,8 +12,8 @@ const Home = () => {
       <div>
         <h2>
           I am a 4th year B.Sc. student of Software Engineering with gpa-91 with
-          2 semesters until graduation, <br />
-          looking for a challenging student position. <br />I am a hard working
+          1 semesters until graduation, <br />
+          looking for a challenging position. <br />I am a hard working
           and passionate autodidact, who brings an innovative mindset. <br />
           My qualities include strong self-learning abilities, performing well
           under pressure, <br />
