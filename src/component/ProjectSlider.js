@@ -19,7 +19,7 @@ const ProjectSlider = (props) => {
     slidesPerView = 1;
   }
   return (
-    <>
+    <div className="container">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -37,7 +37,7 @@ const ProjectSlider = (props) => {
       >
         {slides}
       </Swiper>
-    </>
+    </div>
   );
 };
 

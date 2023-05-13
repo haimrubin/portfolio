@@ -1,12 +1,11 @@
 import React from "react";
 import ProjectSlider from "../component/ProjectSlider";
 import ProjItem from "../component/ProjItem";
-import Card from "../UI/Card";
-import classes from "./Proj.module.css";
 
 import postalImg from "../photos/projects/postalTruck.jpg";
 import newsImg from "../photos/projects/news.png";
 import portfolioImg from "../photos/projects/portfolio.jpg";
+import compiler from "../photos/projects/compiler.png";
 import soccerImg from "../photos/projects/soccer.jpeg";
 
 const data = [
@@ -30,6 +29,15 @@ const data = [
   },
   {
     key: "p3",
+    img: compiler,
+    title: "Compiler",
+    language: "Lex,Yacc,C",
+    txt: "A compiler for a simple language similar to c language. Written in Lex, Yacc, C.",
+    git: "https://github.com/haimrubin/Projects/tree/main/Compiler%20Project",
+    color: "black",
+  },
+  {
+    key: "p4",
     img: postalImg,
     title: "Postal Track",
     language: "Java",
@@ -37,7 +45,7 @@ const data = [
     git: "https://github.com/haimrubin/Projects/tree/main/postalTrack",
   },
   {
-    key: "p4",
+    key: "p5",
     title: "Soccer",
     img: soccerImg,
     language: "React",
