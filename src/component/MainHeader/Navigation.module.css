@@ -43,16 +43,7 @@
     cursor: pointer;
   }
 
-  .nav ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 59px;
-    right: 0;
-    width: 100%;
-    background-color: #181818;
-    border-top: #7076fe;
-  }
+  
   .nav ul {
     display: flex;
     flex-direction: column;

@@ -13,13 +13,13 @@ const Cv = () => {
 
   return (
     <div className={classes.cv}>
-      <h2>Download My CV</h2>
+      <h2>Download My Resume</h2>
 
       <Link
         onClick={downloadHandler}
-        to="/files/Haim Rubin CV.pdf"
+        to="/files/Haim Rubin Resume.pdf"
         target="_blank"
-        download="HaimRubinCV.pdf"
+        download="Haim Rubin Resume.pdf"
       >
         {!downloadFlag ? (
           <DownloadForOfflineRoundedIcon fontSize="large" />

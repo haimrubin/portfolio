@@ -12,9 +12,7 @@ import Proj from "./pages/Proj";
 function App() {
   return (
     <div className="App">
-      <header>
         <Header />
-      </header>
       <main>
         <Switch>
           <Route path="/contact">
